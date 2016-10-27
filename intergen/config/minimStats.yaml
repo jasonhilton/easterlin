@@ -1,0 +1,3 @@
+events: [birth, first_birth]
+labour: [vacancy_rate]
+stocks: [population_by_age]

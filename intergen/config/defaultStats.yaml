@@ -1,0 +1,4 @@
+events: [birth, first_birth]
+labour: [vacancy_rate, young_wage, wage]
+stocks: [population, population_by_age, unemployment, umemployed_skill, age_at_first_birth,
+  labour_force_size, youth_unemployment, parity]

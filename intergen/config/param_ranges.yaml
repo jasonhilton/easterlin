@@ -1,0 +1,36 @@
+!!python/object/apply:collections.defaultdict
+args: [!!python/name:builtins.dict '']
+dictitems:
+  aspiration_offset: {lower: 0, upper: 0.4}
+  aspirations_var: {lower: 0.1, upper: 0.4}
+  base_fertility_a: {lower: 1.0, upper: 1.4}
+  base_fertility_b: {lower: 2.0, upper: 6.0}
+  base_fertility_c: {lower: 24, upper: 30}
+  churn: {lower: 0.01, upper: 0.05}
+  cohort_width: {lower: 1.0, upper: 10.0}
+  default_aspiration: {lower: 0.1, upper: 1.0}
+  desire2: {lower: 0.4, upper: 0.6}
+  exp_max: {lower: 0, upper: 12}
+  feedback_mult: {lower: 0.2, upper: 2.5}
+  female_weight_in_threshold: {lower: 0.0, upper: 1.0}
+  growth_rate: {lower: 0.0, upper: 0.012}
+  imprinting_time: {lower: 10, upper: 16}
+  inheritance_corr: {lower: 0.0, upper: 0.8}
+  initial_aspiration_max: {lower: 0.1, upper: 2.0}
+  job_apps_employed: {lower: 1.0, upper: 8.0}
+  job_apps_unemployed: {lower: 3.0, upper: 40.0}
+  linear_growth: {lower: 0.0, upper: 0.012}
+  parity_feedback_mult: {lower: 0.5, upper: 2.0}
+  parity_offset: {lower: 0.08, upper: 0.25}
+  partner_age_diff: {lower: 0, upper: 7}
+  prob_asymptote: {lower: 0.4, upper: 0.9}
+  prob_mult: {lower: 0.5, upper: 2.0}
+  retirement_age: {lower: 60, upper: 70}
+  social_security_level: {lower: 0.01, upper: 0.3}
+  starting_hump_peak: {lower: 5.0, upper: 60.0}
+  support_ratio: {lower: 2.0, upper: 3.5}
+  wage_alpha: {lower: 0.8, upper: 1.2}
+  wage_beta: {lower: 0.95, upper: 1.05}
+  wage_delta: {lower: 0.0001, upper: 0.0005}
+  wage_feedback_mult: {lower: 0.2, upper: 2.5}
+  wage_gamma: {lower: 0.01, upper: 0.04}

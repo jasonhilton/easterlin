@@ -1,0 +1,23 @@
+#PBS -S /bin/bash
+#PBS -N east
+#PBS -l nodes=8:ppn=16
+#PBS -l walltime=12:59:59
+
+
+cd $PBS_O_WORKDIR
+
+#PYTHONPATH=/home/jdh4g10/.local/lib/python2.7/site-packages:$PYTHONPATH
+
+runs=`ls inputs | grep ^params | wc -l`
+echo "Total runs = $runs"
+
+np=`wc -l < $PBS_NODEFILE`
+echo "Total processing nodes: $np"
+
+pbsdsh -c $np  $PBS_O_WORKDIR/wrap_intergen.sh $np $runs
+
+
+# runs=`ls params/ | grep ^Vparams | wc -l`
+# echo "Total Validation runs = $runs"
+
+# pbsdsh -c $np  $PBS_O_WORKDIR/wrap_valid_intergen.sh $np $runs
